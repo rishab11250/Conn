@@ -18,6 +18,21 @@
 </div>
 
 ---
+## 📚 Table of Contents
+
+- [What is Conn?](#-what-is-conn)
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Quick Start](#-quick-start-local-development)
+- [Deploy to Vercel](#-deploy-to-vercel)
+- [Project Structure](#-project-structure)
+- [API Reference](#-api-reference)
+- [Roadmap](#️-roadmap)
+- [Releases](#-releases)
+- [Contributing](#-contributing)
+- [Contact](#-contact)
+- [License](#-license)
+---
 
 ## 📌 What is Conn?
 
@@ -290,6 +305,21 @@ Conn/
 | [v1.0.0](https://github.com/mayo-byte07/Conn/releases/tag/v1.0.0) | 🚀 Initial launch |
 
 ---
+## 🛠 Troubleshooting
+
+### Port already in use
+If port `3000` is already occupied, stop the existing process or use a different port.
+
+### Supabase connection issues
+Verify that:
+- `SUPABASE_URL` is correct
+- `SUPABASE_SERVICE_KEY` is valid
+- Database tables were created successfully
+
+### JWT errors
+Ensure `JWT_SECRET` is properly added in the `.env` file.
+
+---
 
 ## 🤝 Contributing
 
@@ -297,7 +327,7 @@ We welcome contributions! Please check our [CONTRIBUTING.md](CONTRIBUTING.md) fo
 
 ---
 
-## � Contact
+## 📬 Contact
 
 - **GitHub Issues**: [Report bugs or request features](https://github.com/mayo-byte07/Conn/issues)
 - **GitHub Discussions**: [Ask questions or discuss ideas](https://github.com/mayo-byte07/Conn/discussions)
@@ -306,7 +336,7 @@ We welcome contributions! Please check our [CONTRIBUTING.md](CONTRIBUTING.md) fo
 
 ---
 
-## �� License
+## 📄 License
 
 MIT License © 2026 [AetherCode Society](https://github.com/mayo-byte07)
 

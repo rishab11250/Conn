@@ -41,3 +41,32 @@ Conn utilizes Supabase, providing a highly scalable, managed PostgreSQL database
 - **Stateless REST API**: The API is strictly stateless. No session data is stored in memory. This architectural choice makes Conn perfectly suited for serverless deployments (like Vercel).
 - **Security & CORS**: CORS is configured to restrict access and prevent abuse when the API is deployed across different domains. The `cookie-parser` middleware is used to securely parse `httpOnly` authentication cookies attached to incoming requests.
 - **Serverless Integration**: The `vercel.json` file dictates how Vercel handles requests. It rewrites all dynamic incoming requests to `server.js` while serving files in `/public` as static assets directly from Vercel's Edge Network, achieving optimal latency.
+
+## 🔄 Simplified Request Flow
+
+```text
+User
+  ↓
+Frontend (HTML/CSS/JS)
+  ↓
+Express.js API Server
+  ↓
+Supabase Database
+  ↓
+Response Returned to User
+```
+## 🔐 Authentication Lifecycle
+
+1. User submits login credentials
+2. Express server validates user details
+3. JWT token is generated after successful login
+4. Token is stored securely in an `httpOnly` cookie
+5. Protected API routes verify the JWT before granting access
+
+## ⚙️ Key Design Principles
+
+- Stateless backend (no server sessions)
+- API-first architecture
+- Secure authentication using JWT
+- Mobile-first frontend design
+- Serverless deployment ready (Vercel compatible)

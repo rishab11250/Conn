@@ -144,6 +144,16 @@ When suggesting features:
 - **Testing**: Unit tests, integration tests
 - **Bug Fixes**: Any reported issues
 
+## 🌟 First Contribution Tips
+
+- Read the issue carefully before starting work
+- Keep pull requests focused on a single issue
+- Test documentation formatting before submitting
+- Sync your fork regularly with the upstream repository
+- Be respectful and open to review feedback
+
+
+
 ## 🎉 Recognition
 
 - Contributors will be listed in the CONTRIBUTORS.md file
